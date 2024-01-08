@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayDetails">
+
+    <ImageView
+        android:id="@+id/detailsimage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/detailsshape"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsimage"
+        app:layout_constraintVertical_bias="1.0">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detailsname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Northern mountains"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/rating"
+            android:layout_width="80dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/rating"
+            />
+
+        <TextView
+            android:id="@+id/dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/sanspro"
+            android:text="This is the description"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foods that cant be missed"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/fooditems"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/sanspro"
+            android:text="This is the description"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consider These Places to stay"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/merriweather"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/placestostay"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/sanspro"
+            android:text="This is the description"
+            android:textColor="@color/black"
+            />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/pricestay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$500/"
+        android:textColor="#6A62B7"
+        android:textSize="30dp"
+        android:fontFamily="@font/sansprobold"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Package"
+        android:layout_marginTop="32dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/sansprobold"
+        android:textColor="#6A62B7"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/booknow"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="50dp"
+        android:text="Book Now"
+        android:textColor="@color/white"
+        android:fontFamily="@font/merriweather"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/booknowshape"
+        />
+
+
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
